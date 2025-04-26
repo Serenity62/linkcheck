@@ -1,13 +1,11 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "LinkCheck",
 	"version": "1.0",
-	"descrition": "Checks links and unshortens urls.",
-	"icons": {},
-	"permissions": ["activeTab","tabs"],
+	"description": "Checks links and unshortens urls.",
+	"permissions": [ "webNavigation" ],
 	"background": {
 		"scripts": ["linkcheck.js"],
-		"persistent": false,
-		"type": "module",
+		"type": "module"
 	}
 }
